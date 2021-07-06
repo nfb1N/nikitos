@@ -3,6 +3,7 @@
 class C_Window_smal :
     public C_Window
 {
+public:
     C_Window_smal() : C_Window() {
         this->diagonal = 1;
     }
@@ -13,7 +14,7 @@ class C_Window_smal :
         return C_Window(this->diagonal);
     }
     friend std::ostream& operator << (std::ostream& out, const C_Window_smal& window_big) {
-        out << ((C_Window)window_big) << "\n";
+        out << ((C_Window)window_big);
         return out;
     }
 };

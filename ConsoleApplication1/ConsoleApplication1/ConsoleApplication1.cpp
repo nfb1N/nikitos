@@ -2,10 +2,15 @@
 //
 
 #include <iostream>
+#include"C_Window_Big.h"
+#include"C_Window_smal.h"
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    C_Window def_window(13);
+    C_Window_Big window_big;
+    C_Window_smal window_smal;
+    std::cout << def_window << "\n" << window_big << "\n" << window_smal<< "\n";
 }
 
 

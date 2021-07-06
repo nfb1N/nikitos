@@ -9,7 +9,7 @@ public:
 	C_Window(float diagonal);
 
 	friend std::ostream& operator << (std::ostream& out, const C_Window& window) {
-		out << "diagonale: " << window.diagonal << "\n";
+		out << "diagonale: " << window.diagonal;
 		return out;
 	}
 };
